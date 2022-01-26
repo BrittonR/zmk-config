@@ -53,7 +53,7 @@
     &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &kp SQT 
     &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O   
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &kp COMMA    &kp DOT     &kp FSLH
-                                        &ss LSHIFT LSHIFT        &lt NUM_BCK        &lt NAV_ENT &kp SPC
+                                        &ss LSHIFT LGUI                &lt _NUMB &kp SPC
                         >;
                 };
         numpad_layer {
@@ -61,7 +61,7 @@
     &none       &none       &none       &none       &none               &kp EQUAL    &kp N7      &kp N8      &kp N9      &kp KP_DOT     
     &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none               &kp KP_PLUS  &kp N4      &kp N5      &kp N6      &kp KP_MULTIPLY
     &none       &none       &none       &none       &tog _FUNC          &kp KP_MINUS &kp N1      &kp N2      &kp N3      &kp KP_DIVIDE  
-                                        &trans      &trans              &mo _SYST    &kp N0
+                                        &_BASE      &trans              &mo _SYST    &kp N0
                         >;
                 };
         function_layer {
@@ -69,7 +69,7 @@
     &none       &none       &none       &none       &none              &none       &kp F7      &kp F8      &kp F9      &kp F12
     &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none              &none       &kp F4      &kp F5      &kp F6      &kp F11
     &none       &none       &none       &none       &tog _FUNC         &none       &kp F1      &kp F2      &kp F3      &kp F10
-                                        &trans      &trans             &mo _SYST   &trans
+                                        &_BASE      &trans             &mo _SYST   &trans
                         >;
                 };
         nav_layer {
@@ -77,15 +77,15 @@
     &kp TAB     &kp HOME    &kp UP      &kp END     &kp PG_UP          &kp K_MUTE   &none       &none       &none       &none     
     &kp X_SELA  &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN          &kp C_VOL_UP &kp RSHFT   &kp RCTRL   &kp LALT    &kp RGUI  
     &kp X_UNDO  &kp X_CUT   &kp X_COPY  &kp X_PAST  &kp X_REDO         &kp C_VOL_DN &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_STOP
-                                        &trans      &mo _SYST          &trans       &trans
+                                        &_BASE      &mo _SYST          &trans       &trans
                         >;
                 };
         system_layer {
                         bindings = <
-    &bootloader     &none           &out OUT_USB    &out OUT_BLE        &bt BT_CLR         &bt BT_CLR       &out OUT_BLE    &out OUT_USB    &none           &bootloader
+    &none     &none           &out OUT_USB    &out OUT_BLE        &bt BT_CLR         &bt BT_CLR       &out OUT_BLE    &out OUT_USB    &none           &none
     &none           &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0        &none              &none            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
-    &reset          &none           &none           &none               &none              &none            &none           &none           &none           &reset
-                                                    &trans              &trans             &trans           &trans
+    &none          &none           &none           &none               &none              &none            &none           &none           &none           &none
+                                                    &_BASE              &trans             &trans           &trans
                         >;
                 };
         };
