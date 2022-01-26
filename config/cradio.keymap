@@ -39,6 +39,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&sk>;
         };
+        sb: space_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPACE_BACKSPACE";
+            #binding-cells = <0>;
+            bindings = <&kp SPC>, <&kp BKSP>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -53,7 +60,7 @@
     &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &kp SQT 
     &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O   
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &kp COMMA    &kp DOT     &kp FSLH
-                                        &ss LSHIFT LSHIFT        &kp LGUI        &lt _NUMB &kp SPC
+                                        &ss LSHIFT LSHIFT        &kp LGUI        &lt _NUMB ENTER &sb SPACE_BACKSPACE
                         >;
                 };
         numpad_layer {
