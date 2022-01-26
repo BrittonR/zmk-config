@@ -7,83 +7,86 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include "trankillity.h"
 
-
-&mt {
+&lt {
+    tapping-term-ms = <130>;
     flavor = "tap-preferred";
-    tapping_term_ms = <200>;
 };
 
-/ { 
+&sk {
+     release-after-ms = <300>;
+};
 
-
+/ {
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-	td: tapdance {
+        ss: sticky_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAPDANCE";
+            label = "STICKY_SHIFT";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <130>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp>, <&sk>;
         };
     };
 
-        keymap {
-                compatible = "zmk,keymap";
-                
-       		default_layer {
-		bindings = <
-		&kp Y &kp C &kp L &kp M &kp K 						&kp Z &kp F  &kp U    &td MINUS COMMA  &kp BKSP 
-		&kp I &kp S &hm LALT R &hm LGUI T &kp G 			       	&kp P &hm RGUI N &hm RALT E &kp A &kp O
-		&kp Q &kp V &kp W &kp D &kp J				        &kp B &kp H  &td UNDERSCORE SLASH &td EXCL DOT &kp X
-          				&mt LC(LS(LALT)) SPC &sk LSHIFT  				&sk RCTRL &to 1
-		>;
-		};
+    combos {
+        #include "combos.dtsi"
+    };
 
-       		left_layer {
-		bindings = <
-		&kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &kp PRCNT		&kp CARET &kp LS(COMMA) &kp LS(DOT) &kp SEMI &kp BKSP 
-		&kp TAB    &kp EQUAL    &kp LA(RBKT)      &kp LA(LS(RBKT))     &kp SQT 		&kp BSLH &kp LBRC  &kp RBRC &kp PIPE  &kp ENTER
-		&kp TILDE    &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))  &kp DQT 	&kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3 
-					    &to 0  &sk LSHIFT  					&sk RALT &to 2 
-		>;
-		};
-		
-		right_layer {
-		bindings = <
-		&kp ESC  &kp C_PP &kp C_PREV  &kp C_NEXT  &kp LS(MINUS)    			&kp MINUS  &kp N7 &kp N8 &kp N9 &trans
-		&kp TAB  &trans   &kp C_VOL_DN  &kp C_VOL_UP  &kp LS(EQUAL) 			&kp EQUAL &kp N4  &kp N5  &kp N6   &kp ENTER
-		&to 4  &kp AMPS &kp SLASH &kp STAR &kp DOT    			&kp N0 &kp N1 &kp N2 &kp N3  &trans 
-					  &to 0 &sk LGUI  				&sk RALT  &to 2 
-		>;
-		};
-		
-		tri_layer {
-		bindings = <
-		&trans  &kp LEFT    &kp UP    &kp RIGHT    &kp NUM_5 			&kp LG(LBKT)   &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(RBKT) &trans
-		&kp F1 &kp LEFT &kp DOWN &kp RIGHT &kp DEL  						&kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER 
-		&td LG(GRAVE) GRAVE &kp ENTER  &kp UP &kp DOWN &trans   				&kp ENTER &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &to 0 &trans  					&sk RALT &to 1 
-		>;
-		};	
-		bt {
-		bindings = <
-		&trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-		&trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-		&bt BT_PRV  &bt BT_NXT &bt BT_CLR &trans &trans   				&trans &trans  &trans  &trans &trans   
-					 &to 0 &trans  					&trans &to 1 
-		>;
-		};	
-        
-	};
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer {
+                        bindings = <
+    &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &kp SQT 
+    &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O   
+    &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &kp COMMA    &kp DOT     &kp FSLH
+                                        &ss LSHIFT LSHIFT        &lt NUM_BCK        &lt NAV_ENT &kp SPC
+                        >;
+                };
+        numpad_layer {
+                        bindings = <
+    &none       &none       &none       &none       &none               &kp EQUAL    &kp N7      &kp N8      &kp N9      &kp KP_DOT     
+    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none               &kp KP_PLUS  &kp N4      &kp N5      &kp N6      &kp KP_MULTIPLY
+    &none       &none       &none       &none       &tog _FUNC          &kp KP_MINUS &kp N1      &kp N2      &kp N3      &kp KP_DIVIDE  
+                                        &trans      &trans              &mo _SYST    &kp N0
+                        >;
+                };
+        function_layer {
+                        bindings = <
+    &none       &none       &none       &none       &none              &none       &kp F7      &kp F8      &kp F9      &kp F12
+    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none              &none       &kp F4      &kp F5      &kp F6      &kp F11
+    &none       &none       &none       &none       &tog _FUNC         &none       &kp F1      &kp F2      &kp F3      &kp F10
+                                        &trans      &trans             &mo _SYST   &trans
+                        >;
+                };
+        nav_layer {
+                        bindings = <
+    &kp TAB     &kp HOME    &kp UP      &kp END     &kp PG_UP          &kp K_MUTE   &none       &none       &none       &none     
+    &kp X_SELA  &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN          &kp C_VOL_UP &kp RSHFT   &kp RCTRL   &kp LALT    &kp RGUI  
+    &kp X_UNDO  &kp X_CUT   &kp X_COPY  &kp X_PAST  &kp X_REDO         &kp C_VOL_DN &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_STOP
+                                        &trans      &mo _SYST          &trans       &trans
+                        >;
+                };
+        system_layer {
+                        bindings = <
+    &bootloader     &none           &out OUT_USB    &out OUT_BLE        &bt BT_CLR         &bt BT_CLR       &out OUT_BLE    &out OUT_USB    &none           &bootloader
+    &none           &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0        &none              &none            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
+    &reset          &none           &none           &none               &none              &none            &none           &none           &none           &reset
+                                                    &trans              &trans             &trans           &trans
+                        >;
+                };
+        };
 };
