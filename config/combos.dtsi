@@ -33,7 +33,7 @@ COMBO(hme, &kp HOME, 3 4, 30, _BASE)
 COMBO(end, &kp END, 5 6, 30, _BASE)
 COMBO(chme, &kp LC(HOME), 2 3 4, 40, _BASE)
 COMBO(cend, &kp LC(END), 5 6 7, 40, _BASE)
-COMBO(esc, &kp ESC, 4 5, 30, _BASE)
+COMBO(esc, &kp ESC, 12 13, 30, _BASE)
 COMBO(tab, &kp TAB, 0 1, 30, _BASE)
 COMBO(stab, &kp LS(TAB), 8 9, 30, _BASE)
 
@@ -51,4 +51,4 @@ COMBO(scln, &kp SEMI, 8 18, 20, _BASE)
 COMBO(coln, &kp COLON, 18 28, 20, _BASE)
 
 /* System */
-COMBO(login, &kp LC(LA(DEL)), 0 10 20, 50, _BASE)
+COMBO(login, &kp LC(LG(Q)), 0 10 20, 50, _BASE)
