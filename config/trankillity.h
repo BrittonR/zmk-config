@@ -7,18 +7,19 @@
 #define NAV_ENT _NAVI ENTER
 #define NUM_BCK _NUMB BACKSPACE
 
-#define X_SELA      LC(A)
-#define X_UNDO      LC(Z)
-#define X_CUT       LC(X)
-#define X_COPY      LC(C)
-#define X_PAST      LC(V)
-#define X_REDO      LC(Y)
+#define X_SELA      LGUI(A)
+#define X_UNDO      LGUI(Z)
+#define X_CUT       LGUI(X)
+#define X_COPY      LGUI(C)
+#define X_PAST      LGUI(V)
+#define X_REDO      LGUI(Y)
 
-#define X_A LGUI    A
-#define X_R LALT    R
-#define X_S LCTRL   S
-#define X_T LSHFT   T
-#define X_N RSHFT   N
-#define X_E RCTRL   E
-#define X_I LALT    I
-#define X_O RGUI    O 
+#define X_A LSHIFT   A
+#define X_R LCTRL  R
+#define X_S LALT   S
+#define X_T LGUI   T
+
+#define X_N RGUI   N
+#define X_E RALT   E
+#define X_I RCTRL    I
+#define X_O RSHIFT    O 
