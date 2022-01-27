@@ -26,9 +26,6 @@ COMBO(lang, &kp LT, 26 27, 30, _BASE _NUMB)
 COMBO(rang, &kp GT, 27 28, 30, _BASE _NUMB)
 
 /* Editing */
-COMBO(del, &kp DELETE, 14 15, 30, _BASE)
-COMBO(clft, &kp LC(LEFT), 13 14, 30, _BASE)
-COMBO(crgt, &kp LC(RIGHT), 15 16, 30, _BASE)
 COMBO(hme, &kp HOME, 3 4, 30, _BASE)
 COMBO(end, &kp END, 5 6, 30, _BASE)
 COMBO(chme, &kp LC(HOME), 2 3 4, 40, _BASE)
@@ -38,17 +35,17 @@ COMBO(tab, &kp TAB, 11 12, 30, _BASE)
 COMBO(stab, &kp LS(TAB), 1 2, 30, _BASE)
 
 /* Symbols */
-COMBO(grav, &kp GRAVE, 0 10, 20, _BASE)
-COMBO(tild, &kp TILDE, 10 20, 20, _BASE)
-COMBO(mins, &kp MINUS, 1 11, 20, _BASE)
-COMBO(unds, &kp UNDER, 11 21, 20, _BASE)
-COMBO(eqal, &kp EQUAL, 2 12, 20, _BASE)
-COMBO(plus, &kp PLUS, 12 22, 20, _BASE)
+COMBO(grav, &kp GRAVE, 0 10, 30, _BASE)
+COMBO(tild, &kp TILDE, 10 20, 30, _BASE)
+COMBO(mins, &kp MINUS, 1 11, 30, _BASE)
+COMBO(unds, &kp UNDER, 11 21, 30, _BASE)
+COMBO(eqal, &kp EQUAL, 2 12, 30, _BASE)
+COMBO(plus, &kp PLUS, 12 22, 30, _BASE)
 
-COMBO(bsls, &kp BSLH, 9 19, 20, _BASE)
-COMBO(pipe, &kp PIPE, 19 29, 20, _BASE)
-COMBO(scln, &kp SEMI, 8 18, 20, _BASE)
-COMBO(coln, &kp COLON, 18 28, 20, _BASE)
+COMBO(bsls, &kp BSLH, 9 19, 30, _BASE)
+COMBO(pipe, &kp PIPE, 19 29, 30, _BASE)
+COMBO(scln, &kp SEMI, 7 17, 30, _BASE)
+COMBO(coln, &kp COLON, 17 27, 30, _BASE)
 
 /* System */
 COMBO(login, &kp LC(LG(Q)), 0 10 20, 50, _BASE)
