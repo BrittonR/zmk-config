@@ -60,7 +60,7 @@
     &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &kp SQT 
     &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O   
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &mt QMARK COMMA    &mt EXCL DOT     &mt BSLH FSLH
-                                        &sb    &kp LSHIFT        &to _NUMB &kp ENTER
+                                        &kp LSHIFT &sb        &kp ENTER &to _NUMB
                         >;
                 };
         numpad_layer {
