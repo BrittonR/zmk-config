@@ -58,11 +58,11 @@
         bm: backspace_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "BACKSPACE_MOD";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             tapping-term-ms = <300>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&to>, <&bd>;
+            bindings = <&to _NAVI>, <&bd>;
         };
     };
 
