@@ -23,3 +23,13 @@
 #define X_E RALT   E
 #define X_I RCTRL    I
 #define X_O RSHIFT    O 
+
+#define X_0 LSHIFT   0
+#define X_6 LCTRL  6
+#define X_5 LALT   5
+#define X_4 LGUI   4
+
+#define X_LEFT RGUI   LEFT
+#define X_UP RALT   UP
+#define X_DOWN RCTRL    DOWN
+#define X_RIGHT RSHIFT    RIGHT 
