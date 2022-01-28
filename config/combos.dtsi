@@ -22,6 +22,8 @@ COMBO(lbrk, &kp LBKT, 6 7, 30, _BASE _NAVI)
 COMBO(rbrk, &kp RBKT, 7 8, 30, _BASE _NAVI)
 COMBO(lpar, &kp LPAR, 16 17, 30, _BASE _NAVI)
 COMBO(rpar, &kp RPAR, 17 18, 30, _BASE _NAVI)
+COMBO(lbrace, &kp LBRC, 31 16 17, 30, _BASE _NAVI)
+COMBO(lbrace, &kp LBRC, 31 17 18, 30, _BASE _NAVI)
 COMBO(lang, &kp LT, 26 27, 30, _BASE _NAVI)
 COMBO(rang, &kp GT, 27 28, 30, _BASE _NAVI)
 
