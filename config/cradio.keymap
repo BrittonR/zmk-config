@@ -62,7 +62,7 @@
             bindings = <&to _NAVI>, <&kp ENTER>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-            fb: func_enter {
+            ef: func_enter {
             compatible = "zmk,behavior-mod-morph";
             label = "FUNC_ENTER";
             #binding-cells = <0>;
