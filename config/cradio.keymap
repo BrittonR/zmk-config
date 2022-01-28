@@ -58,7 +58,7 @@
         bm: backspace_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "BACKSPACE_MOD";
-            #binding-cells = <2>;
+            #binding-cells = <1>;
             tapping-term-ms = <300>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
