@@ -26,7 +26,7 @@ COMBO(lang, &kp LT, 26 27, 30, _BASE _NAVI)
 COMBO(rang, &kp GT, 27 28, 30, _BASE _NAVI)
 
 /* Editing */
-COMBO(hme, &kp HOME, 3 4, 30, _BASE _NAVI)
+COMBO(hme, &kp HOME, 15 16, 30, _BASE _NAVI)
 COMBO(end, &kp END, 5 6, 30, _BASE _NAVI)
 COMBO(chme, &kp LC(HOME), 2 3 4, 40, _BASE _NAVI)
 COMBO(cend, &kp LC(END), 5 6 7, 40, _BASE _NAVI)
