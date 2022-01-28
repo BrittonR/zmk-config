@@ -46,9 +46,9 @@
             tapping-term-ms = <130>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&to>, <&sk>;
+            bindings = <&kp>, <&sk>;
         };
-        st: space_tab {
+        bd: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "SPACE_TAB";
             #binding-cells = <0>;
@@ -69,7 +69,7 @@
     &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &mt DQT SQT 
     &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O   
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &mt QMARK COMMA    &mt EXCL DOT     &mt BSLH FSLH
-                                        &ss _NAVI LSHIFT &lm _NUMB SPC       &mt BACKSPACE DELETE &lm _NUMB ENTER
+                                        &ss LSHIFT LSHIFT &mt LC(LS(LALT)) SPC       &lm _NAVI &bd &lm _NUMB ENTER
                         >;
                 };
         numpad_layer {
