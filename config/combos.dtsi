@@ -45,7 +45,7 @@ COMBO(plus, &kp PLUS, 12 22, 30, _BASE)
 COMBO(bsls, &kp AMPS, 9 19, 30, _BASE)
 COMBO(pipe, &kp PIPE, 19 29, 30, _BASE)
 COMBO(doll, &kp DOLLAR, 8 18, 30, _BASE)
-COMBO(at, &kp at, 18 28, 30, _BASE)
+COMBO(at, &kp AT, 18 28, 30, _BASE)
 COMBO(scln, &kp SEMI, 7 17, 30, _BASE)
 COMBO(coln, &kp COLON, 17 27, 30, _BASE)
 
