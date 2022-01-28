@@ -55,6 +55,13 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+            en: navi_enter {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NAVI_ENTER";
+            #binding-cells = <0>;
+            bindings = <&to _NAVI>, <&kp ENTER>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         bm: backspace_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "BACKSPACE_MOD";
@@ -78,7 +85,7 @@
     &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &mt DQT SQT 
     &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O   
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &mt QMARK COMMA    &mt EXCL DOT     &mt BSLH FSLH
-                                        &ss LSHIFT LSHIFT &mt LC(LS(LALT)) SPC       &bm _NAVI &bd &lm _NUMB ENTER
+                                        &ss LSHIFT LSHIFT &mt LC(LS(LALT)) SPC     &bd         &en
                         >;
                 };
         numpad_layer {
@@ -86,7 +93,7 @@
     &none       &none       &none       &none       &none               &kp KP_PLUS    &kp N7      &kp N8      &kp N9      &kp KP_MULTIPLY     
     &kp LGUI    &kp EXCL    &kp PIPE   &kp AMPS   &kp HASH               &kp N0  &kp N4      &kp N5      &kp N6      &kp KP_DOT
     &none       &none       &none       &none       &tog _FUNC          &kp KP_MINUS &kp N1      &kp N2      &kp N3      &kp KP_DIVIDE  
-                                        &to _BASE      &trans              &kp KP_EQUAL    &lt NAV_ENT
+                                        &to _BASE      &to _BASE              &kp KP_EQUAL    &lt NAV_ENT
                         >;
                 };
         function_layer {
@@ -94,15 +101,15 @@
     &none       &none       &none       &none       &none              &none       &kp F7      &kp F8      &kp F9      &kp F12
     &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none              &none       &kp F4      &kp F5      &kp F6      &kp F11
     &none       &none       &none       &none       &tog _FUNC         &none       &kp F1      &kp F2      &kp F3      &kp F10
-                                        &to _BASE      &trans             &mo _SYST   &trans
+                                        &to _BASE      &to _BASE             &mo _SYST   &trans
                         >;
                 };
         nav_layer {
                         bindings = <
-    &kp TAB     &kp HOME    &kp UP      &kp END     &kp PG_UP          &kp ESC   &none       &kp PAGE_DOWN  &kp PAGE_UP       &kp ENTER     
-    &kp X_SELA  &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_DN          &kp I &kp LEFT &kp UP &kp DOWN  &kp RIGHT  
-    &kp X_UNDO  &kp X_CUT   &kp X_COPY  &kp X_PAST  &kp X_REDO         &kp COLON &kp HOME  &kp END    &kp C_NEXT  &kp DELETE
-                                        &to _BASE      &mo _SYST          &trans       &trans
+    &kp X_REDO     &kp N9    &kp N8      &kp N7     &kp X_CUT          &kp ESC   &kp PAGE_UP       &kp PAGE_DOWN  &kp G       &kp ENTER     
+    &kp N0  &kp N6    &kp N5    &kp N4   &kp X_COPY          &kp I &kp LEFT &kp UP &kp DOWN  &kp RIGHT  
+    &kp X_UNDO  &kp N3   &kp N2  &kp N1  &kp X_PAST         &kp COLON &kp HOME  &kp END    &kp PERCENT  &kp DELETE
+                                        &kp LCTRL       &trans          &trans       &to _BASE
                         >;
                 };
         system_layer {
