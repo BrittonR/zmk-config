@@ -33,6 +33,13 @@ COMBO(cend, &kp LC(END), 5 6 7, 40, _BASE _NAVI)
 COMBO(esc, &kp ESC, 12 13, 30, _BASE _NAVI)
 COMBO(tab, &kp TAB, 11 12, 30, _BASE _NAVI)
 COMBO(stab, &kp LS(TAB), 1 2, 30, _BASE _NAVI)
+COMBO(copy, &kp LG(C), 3 13, 30, _BASE _NAVI)
+COMBO(paste, &kp LG(V), 4 14, 30, _BASE _NAVI)
+COMBO(cut, &kp LG(X), 13 23, 30, _BASE _NAVI)
+COMBO(selectall, &kp LG(A), 14 24, 30, _BASE _NAVI)
+COMBO(undo, &kp LG(Z), 13 14, 30, _BASE _NAVI)
+COMBO(redo, &kp LG(Y), 23 24, 30, _BASE _NAVI)
+
 
 /* Symbols */
 COMBO(grav, &kp GRAVE, 0 10, 30, _BASE _NAVI)
@@ -41,13 +48,15 @@ COMBO(mins, &kp MINUS, 1 11, 30, _BASE _NAVI)
 COMBO(unds, &kp UNDER, 11 21, 30, _BASE _NAVI)
 COMBO(eqal, &kp EQUAL, 2 12, 30, _BASE _NAVI)
 COMBO(plus, &kp PLUS, 12 22, 30, _BASE _NAVI)
-
 COMBO(bsls, &kp AMPS, 9 19, 30, _BASE _NAVI)
 COMBO(pipe, &kp PIPE, 19 29, 30, _BASE _NAVI)
 COMBO(doll, &kp DOLLAR, 8 18, 30, _BASE _NAVI)
 COMBO(at, &kp AT, 18 28, 30, _BASE _NAVI)
-COMBO(scln, &kp SEMI, 7 17, 30, _BASE _NAVI)
-COMBO(coln, &kp COLON, 17 27, 30, _BASE _NAVI)
+COMBO(scln, &kp SEMI, 17 27, 30, _BASE _NAVI)
+COMBO(coln, &kp COLON, 7 17, 30, _BASE _NAVI)
+COMBO(percent, &kp PERCENT, 5 15, 30, _BASE _NAVI)
+COMBO(percent, &kp ASTERISK, 15 25, 30, _BASE _NAVI)
+
 
 /* System */
 COMBO(login, &kp LC(LG(Q)), 0 10 20, 50, _BASE _NAVI)
