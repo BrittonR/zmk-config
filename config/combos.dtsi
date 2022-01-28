@@ -55,7 +55,7 @@ COMBO(at, &kp AT, 18 28, 30, _BASE _NAVI)
 COMBO(scln, &kp SEMI, 17 27, 30, _BASE _NAVI)
 COMBO(coln, &kp COLON, 7 17, 30, _BASE _NAVI)
 COMBO(percent, &kp PERCENT, 5 15, 30, _BASE _NAVI)
-COMBO(percent, &kp ASTERISK, 15 25, 30, _BASE _NAVI)
+COMBO(asterisk, &kp ASTERISK, 15 25, 30, _BASE _NAVI)
 
 
 /* System */
