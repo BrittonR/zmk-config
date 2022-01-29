@@ -1,6 +1,6 @@
 #define _BASE 0
-#define _FUNC 1
-#define _NAVI 2
+#define _NAVI 1
+#define _FUNC 2
 #define _SYST 3
 
 #define NAV_ENT _NAVI ENTER
