@@ -113,7 +113,7 @@
         nav_layer {
                         bindings = <
     &kp Q     &kp N9    &kp N8      &kp N7     &kp D          &kp A &kp V   &kp PAGE_UP &kp PAGE_DOWN  &kp O     
-    &hm X_0  &hm X_6    &hm X_5    &hm X_4   &kp             &kp I &hm X_LEFT &hm X_UP &hm X_DOWN  &hm X_RIGHT  
+    &hm X_0  &hm X_6    &hm X_5    &hm X_4   &kp G            &kp I &hm X_LEFT &hm X_UP &hm X_DOWN  &hm X_RIGHT  
     &kp F  &kp N3   &kp N2  &kp N1  &kp X                   &yp  &kp W  &kp B    &kp DOT  &mt BSLH FSLH
                             &lm _BASE LC(LS(LALT))       &trans           &bd       &ef
                         >;
