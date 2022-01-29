@@ -99,7 +99,7 @@
     &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &mt DQT SQT 
     &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O   
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &mt QMARK COMMA    &mt EXCL DOT     &mt BSLH FSLH
-                                        &kp LC(LS(LALT)) &hm LSHIFT SPACE    &bd         &en
+                                        &kp LC(LS(LALT)) &hm LSHIFT SPACE    &bd         &lt NAV_ENT
                         >;
                 };
         nav_layer {
@@ -107,7 +107,7 @@
     &kp Q     &kp N9    &kp N8      &kp N7     &kp D          &kp A &kp V   &kp PAGE_UP &kp PAGE_DOWN  &kp O     
     &hm X_0  &hm X_6    &hm X_5    &hm X_4   &kp G            &kp I &hm X_LEFT &hm X_UP &hm X_DOWN  &hm X_RIGHT  
     &kp F  &kp N3   &kp N2  &kp N1  &kp X                   &yp  &kp W  &kp B    &kp DOT  &mt BSLH FSLH
-                            &lm _BASE LC(LS(LALT))       &hm LSHIFT SPACE           &bd       &ef
+                            &lm _BASE LC(LS(LALT))       &hm LSHIFT SPACE           &bd       &lt _FUNC ENTER
                         >;
                 };
         function_layer {
