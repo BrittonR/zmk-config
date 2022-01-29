@@ -113,7 +113,7 @@
         function_layer {
                         bindings = <
     &kp F12       &kp F9       &kp F8       &kp F7       &none              &none       &kp C_PP      &kp C_NEXT      &kp C_PREV     &kp C_POWER
-    &kp F11    &kp F6    &kp F5   &kp F4   &none         &tog _SYST       &kp C_MUTE      &kp C_VOLUME_UP      &kp C_VOLUME_DOWN      &none
+    &kp F11    &kp F6    &kp F5   &kp F4   &none         &to _SYST       &kp C_MUTE      &kp C_VOLUME_UP      &kp C_VOLUME_DOWN      &none
     &kp F10       &kp F3       &kp F2       &kp F1       &none         &none       &none      &kp C_BRI_INC      &kp C_BRI_DEC      &none
                                         &lm _BASE LC(LS(LALT))      &to _BASE             &to _BASE   &to _BASE
                         >;
@@ -121,7 +121,7 @@
         system_layer {
                         bindings = <
     &bootloader     &none           &out OUT_USB    &out OUT_BLE        &bt BT_CLR         &bt BT_CLR       &out OUT_BLE    &out OUT_USB    &none           &bootloader
-    &none           &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0        &tog _SYST              &none            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
+    &none           &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0        &none              &none            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
     &reset          &none           &none           &none               &none              &none            &none           &none           &none           &reset
                                                    &to _BASE              &trans             &trans           &trans
                         >;
