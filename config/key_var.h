@@ -1,8 +1,7 @@
 #define _BASE 0
-#define _NUMB 1
-#define _FUNC 2
-#define _NAVI 3
-#define _SYST 4
+#define _FUNC 1
+#define _NAVI 2
+#define _SYST 3
 
 #define NAV_ENT _NAVI ENTER
 #define NUM_BCK _NUMB BACKSPACE
