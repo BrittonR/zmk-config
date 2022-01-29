@@ -107,7 +107,7 @@
     &kp Q     &kp N9    &kp N8      &kp N7     &kp D          &kp A &kp V   &kp PAGE_UP &kp PAGE_DOWN  &kp O     
     &hm X_0  &hm X_6    &hm X_5    &hm X_4   &kp G            &kp I &hm X_LEFT &hm X_UP &hm X_DOWN  &hm X_RIGHT  
     &kp F  &kp N3   &kp N2  &kp N1  &kp X                   &yp  &kp W  &kp B    &kp DOT  &mt BSLH FSLH
-                            &lm _BASE LC(LS(LALT))       &trans           &bd       &ef
+                            &lm _BASE LC(LS(LALT))       &hm LSHIFT SPACE           &bd       &ef
                         >;
                 };
         function_layer {
@@ -123,7 +123,7 @@
     &bootloader     &none           &out OUT_USB    &out OUT_BLE        &bt BT_CLR         &bt BT_CLR       &out OUT_BLE    &out OUT_USB    &none           &bootloader
     &none           &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0        &tog _SYST              &none            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
     &reset          &none           &none           &none               &none              &none            &none           &none           &none           &reset
-                                                    &trans              &trans             &trans           &trans
+                                                   &to _BASE              &trans             &trans           &trans
                         >;
                 };
         };
