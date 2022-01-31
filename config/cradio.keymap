@@ -39,6 +39,15 @@
             flavor = "balanced";
             bindings = <&to>, <&kp>;
         };
+        ml: mod_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "mod_layer";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <ko>, <&to>;
+        };
         ss: sticky_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKY_SHIFT";
@@ -107,7 +116,7 @@
     &kp Q     &kp N9    &kp N8      &kp N7     &kp D          &kp A &kp V   &kp PAGE_UP &kp PAGE_DOWN  &kp O     
     &hm X_0  &hm X_6    &hm X_5    &hm X_4   &kp G            &kp I &hm X_LEFT &hm X_UP &hm X_DOWN  &hm X_RIGHT  
     &kp F  &kp N3   &kp N2  &kp N1  &kp X                   &yp  &kp W  &kp B    &kp DOT  &mt BSLH FSLH
-                            &lm _BASE LC(LS(LALT))       &hm LSHIFT SPACE           &bd       &lm _FUNC ENTER
+                            &ml LC(LS(LALT)) _BASE       &hm LSHIFT SPACE           &bd       &lm _FUNC ENTER
                         >;
                 };
         function_layer {
@@ -115,7 +124,7 @@
     &kp F12       &kp F9       &kp F8       &kp F7       &none              &none       &kp C_PP      &kp C_NEXT      &kp C_PREV     &kp C_POWER
     &kp F11    &kp F6    &kp F5   &kp F4   &none         &to _SYST       &kp C_MUTE      &kp C_VOLUME_UP      &kp C_VOLUME_DOWN      &none
     &kp F10       &kp F3       &kp F2       &kp F1       &none         &none       &none      &kp C_BRI_INC      &kp C_BRI_DEC      &none
-                                        &lm _BASE LC(LS(LALT))      &to _BASE             &to _BASE   &to _BASE
+                                        &ml LC(LS(LALT)) _BASE      &to _BASE             &to _BASE   &to _BASE
                         >;
                 };
         system_layer {
