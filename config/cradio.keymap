@@ -46,7 +46,7 @@
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
             flavor = "balanced";
-            bindings = <ko>, <&to>;
+            bindings = <&kp>, <&to>;
         };
         ss: sticky_shift {
             compatible = "zmk,behavior-hold-tap";
