@@ -41,7 +41,7 @@ COMBO(cut, &kp LG(X), 13 23, 30, _BASE _NAVI)
 COMBO(selectall, &kp LG(A), 14 24, 30, _BASE _NAVI)
 COMBO(undo, &kp LG(Z), 13 14, 30, _BASE _NAVI)
 COMBO(redo, &kp LG(Y), 23 24, 30, _BASE _NAVI)
-COMBO(redo, &kp ENTER, 18 19, 30, _BASE _NAVI)
+COMBO(enter, &kp ENTER, 18 19, 30, _BASE _NAVI)
 
 
 /* Symbols */
