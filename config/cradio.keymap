@@ -106,7 +106,7 @@
         base_layer {
                         bindings = <
     &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &mt DQT SQT 
-    &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O   
+    &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &kp O   
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &mt QMARK COMMA    &mt EXCL DOT     &mt BSLH FSLH
                                         &kp LC(LS(LALT)) &hm LSHIFT SPACE    &bd         &to _NAVI
                         >;
