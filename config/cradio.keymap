@@ -130,7 +130,7 @@
         system_layer {
                         bindings = <
     &bootloader     &none           &out OUT_USB    &out OUT_BLE        &bt BT_CLR         &bt BT_CLR       &out OUT_BLE    &out OUT_USB    &none           &bootloader
-    &none           &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0        &none              &none            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
+    &bootloader           &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0        &none              &none            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
     &reset          &none           &none           &none               &none              &none            &none           &none           &none           &reset
                                                    &to _BASE              &trans             &trans           &trans
                         >;
