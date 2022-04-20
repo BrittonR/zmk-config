@@ -45,7 +45,7 @@ COMBO(enter, &kp ENTER, 18 19, 30, _BASE _NAVI)
 
 
 /* Symbols */
-COMBO(semi, &kp SEMI, 5 15, 30, _BASE _NAVI)
+COMBO(semi, &kp SEMI, 16 26, 30, _BASE _NAVI)
 COMBO(colon, &kp COLON, 6 16, 30, _BASE _NAVI)
 COMBO(grav, &kp GRAVE, 0 10, 30, _BASE _NAVI)
 COMBO(tild, &kp TILDE, 10 20, 30, _BASE _NAVI)
